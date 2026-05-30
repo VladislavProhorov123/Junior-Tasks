@@ -15,3 +15,21 @@ function countEvenNumbers(arr) {
 }
 
 console.log(countEvenNumbers([1, 2, 3, 4, 5, 6, 7, 8])) // 4
+
+// Count Odd Numbers
+
+// Напишите функцию, которая принимает массив чисел и возвращает количество нечетных чисел в этом массиве
+
+function countOddNumbers(arr) {
+  let count = 0
+
+  for(const num of arr) {
+    if(num % 2 !== 0) {
+      count++
+    }
+  }
+
+  return count
+}
+
+console.log(countOddNumbers([1, 2, 3, 4, 5, 6, 7, 8])) // 4
